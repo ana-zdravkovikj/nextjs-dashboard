@@ -6,6 +6,12 @@ import Pagination from "@/app/ui/invoices/pagination";
 import { InvoicesTableSkeleton, TableRowSkeleton } from "@/app/ui/skeletons";
 import { Suspense } from "react";
 import FormattedCustomersTable from "@/app/ui/customers/table";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Customers",
+};
+
 export default async function CustomersPage(props: {
   searchParams?: Promise<{
     query?: string;
